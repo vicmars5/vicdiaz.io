@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import Link from 'next/link'
-import Layout from '../organisms/layout'
+import Layout from '../organisms/Layout'
 import getPosts from '../utils/get-posts-slugs'
 
 export default function Home ({ pageTitle, description, posts, ...props }) {
