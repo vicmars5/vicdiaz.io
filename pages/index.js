@@ -1,13 +1,13 @@
 import Head from 'next/head'
 
-export default function Home({ pageTitle, description, ...props}) {
+export default function Home ({ pageTitle, description, ...props }) {
   return (
-    <div className="container mx-auto mt-5">
+    <div className='container mx-auto mt-5'>
       <Head>
         <title>{pageTitle}</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="description" description={description} />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel='icon' href='/favicon.ico' />
+        <meta name='description' description={description} />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
 
       <main>
@@ -17,7 +17,7 @@ export default function Home({ pageTitle, description, ...props}) {
   )
 }
 
-export async function getStaticProps() {
+export async function getStaticProps () {
   return {
     props: {
       pageTitle: 'Vic\'s Blog',
