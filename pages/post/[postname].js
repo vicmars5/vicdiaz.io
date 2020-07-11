@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import ReactMarkdown from 'react-markdown'
-import Layout from '../../organisms/layout'
+import Layout from '../../organisms/Layout'
 import { getPost, getSlugs, getPath } from '../../utils/get-posts-slugs'
 
 export default function BlogPost ({ markdownBody, title, pageTitle, description, author }) {
