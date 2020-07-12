@@ -4,6 +4,7 @@
 
 body {
   @apply text-gray-900;
+	font-size: 20px;
 }
 
 h1 {
