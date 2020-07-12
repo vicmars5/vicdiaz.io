@@ -7,7 +7,7 @@ import { getPost, getSlugs, getPath } from '../../utils/get-posts-slugs'
 export default function BlogPost ({ markdownBody, title, pageTitle, description, author }) {
   return (
     <Layout pageTitle={pageTitle} description={description}>
-      <div className='font-serif'>
+      <div className=''>
         <article>
           <div className='pb-5'>
             <h1>{title}</h1>

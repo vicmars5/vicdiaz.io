@@ -14,10 +14,10 @@ export default function Layout (props) {
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
 
-      <nav className='bg-white p-4'>
+      <nav>
         <div className='container mx-auto text-center'>
           <Link href='/'>
-            <a className='text-xl font-bold p-2 hover:text-blue-500 hover:bg-white inline-block'>
+            <a className='text-2xl text-black font-extrabold p-3 hover:text-blue-500 inline-block'>
               Vic's Blog
             </a>
           </Link>
