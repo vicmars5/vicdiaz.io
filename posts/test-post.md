@@ -1,11 +1,9 @@
 ---
 pageTitle: 'A test post!'
-title: 'Lorem'
+title: 'Un post de Victor'
 author: 'Victor'
 description: 'lorem ipsum dolo sit amet'
 ---
-
-# Test post h1
 
 **Humblebrag sartorial man braid ad** vice, _wolf rampa_ in cronut proident cold-pressed occupy organic normcore. Four loko tbh tousled reprehenderit ex enim qui banjo organic aute gentrify church-key. Man braid ramps in, 3 wolf moon laborum iPhone venmo sunt yr elit laboris poke succulents intelligentsia activated charcoal. Gentrify messenger bag hot chicken brooklyn. Seitan four loko art party, ut 8-bit live-edge heirloom. Cornhole post-ironic glossier officia, man braid raclette est organic knausgaard chillwave.
 
@@ -24,5 +22,7 @@ Adipisicing distinctio nihil natus delectus voluptate Est velit excepturi velit 
 - Woo hoo
 
 ``` js
-console.log('This is JS code!')
+function hello () {
+  console.log('This is JS code!')
+}
 ```
