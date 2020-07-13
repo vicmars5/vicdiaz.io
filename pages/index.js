@@ -6,11 +6,18 @@ import getPosts from '../utils/get-posts-slugs'
 export default function Home ({ pageTitle, description, posts, ...props }) {
   return (
     <Layout pageTitle={pageTitle} description={description}>
-      <h1>Hello world</h1>
       {posts.map((post) => (
-        <Link href={post.path} key={post.path}>
-          <a>{post.title}</a>
-        </Link>
+        <article key={post.path}>
+          <Link href={post.path} key={post.path}>
+            <a>
+              <h2 className='inline-block'>
+                {post.title}
+              </h2>
+              <p className='leading-none text-gray-700'>{post.description}</p>
+              <small className='text-gray-700'>{post.date}</small>
+            </a>
+          </Link>
+        </article>
       ))}
     </Layout>
   )
@@ -26,7 +33,9 @@ export async function getStaticProps () {
   const posts = await getPosts()
   const filteredPosts = posts.map((post) => ({
     title: post.title,
-    path: post.path
+    path: post.path,
+    description: post.description,
+    date: post.date
   }))
 
   return {
