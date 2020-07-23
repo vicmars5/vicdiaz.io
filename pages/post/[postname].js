@@ -3,8 +3,18 @@ import ReactMarkdown from 'react-markdown'
 import Layout from '../../organisms/Layout'
 import CodeBlock from '../../organisms/CodeBlock'
 import { getPost, getSlugs, getPath } from '../../utils/get-posts-slugs'
+import useViewEffect from '../../utils/use-view-effect'
 
-export default function BlogPost ({ markdownBody, title, pageTitle, description, author }) {
+export default function BlogPost ({
+  id,
+  markdownBody,
+  title,
+  pageTitle,
+  description,
+  author
+}) {
+  useViewEffect(id)
+
   return (
     <Layout pageTitle={pageTitle} description={description}>
       <div className=''>
@@ -24,6 +34,7 @@ export default function BlogPost ({ markdownBody, title, pageTitle, description,
 }
 
 BlogPost.propTypes = {
+  id: PropTypes.number.isRequired,
   markdownBody: PropTypes.string.isRequired,
   title: PropTypes.string,
   pageTitle: PropTypes.string,

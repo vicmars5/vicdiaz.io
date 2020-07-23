@@ -1,4 +1,5 @@
 ---
+id: 1
 pageTitle: 'A test post!'
 title: 'Un post de Victor'
 author: 'Victor'
