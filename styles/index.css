@@ -3,5 +3,39 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-200;
+  @apply text-gray-900 bg-orange-100;
+	font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	@apply font-bold text-black;
+}
+
+h1 {
+  @apply text-3xl pb-0 pt-1;
+}
+
+h2 {
+  @apply text-2xl pb-0 pt-1;
+}
+
+h3 {
+  @apply text-xl pb-0 pt-1;
+}
+
+p {
+  @apply pb-3;
+}
+
+ul {
+	@apply pl-5 pb-3 list-disc;
+}
+
+a {
+  @apply text-blue-700;
+}
+
+pre {
+  @apply bg-orange-100;
+  @apply my-3 p-3 bg-white rounded-lg shadow-lg;
 }

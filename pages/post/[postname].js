@@ -1,14 +1,24 @@
 import PropTypes from 'prop-types'
 import ReactMarkdown from 'react-markdown'
 import Layout from '../../organisms/Layout'
+import CodeBlock from '../../organisms/CodeBlock'
 import { getPost, getSlugs, getPath } from '../../utils/get-posts-slugs'
 
 export default function BlogPost ({ markdownBody, title, pageTitle, description, author }) {
   return (
     <Layout pageTitle={pageTitle} description={description}>
-      <h1>{title}</h1>
-      <small>{author}</small>
-      <ReactMarkdown source={markdownBody} />
+      <div className=''>
+        <article>
+          <div className='pb-5'>
+            <h1>{title}</h1>
+            <small>{author}</small>
+          </div>
+          <ReactMarkdown
+            source={markdownBody}
+            renderers={{ code: CodeBlock }}
+          />
+        </article>
+      </div>
     </Layout>
   )
 }
