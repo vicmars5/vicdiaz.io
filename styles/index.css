@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  @apply text-gray-900 bg-orange-100;
+  @apply text-gray-900 bg-gray-100;
+  @apply p-3;
 	font-size: 20px;
 }
 
