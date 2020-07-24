@@ -3,15 +3,28 @@ import ReactMarkdown from 'react-markdown'
 import Layout from '../../organisms/Layout'
 import CodeBlock from '../../organisms/CodeBlock'
 import { getPost, getSlugs, getPath } from '../../utils/get-posts-slugs'
+import useRequestView from '../../utils/use-view-effect'
 
-export default function BlogPost ({ markdownBody, title, pageTitle, description, author }) {
+export default function BlogPost ({
+  id,
+  markdownBody,
+  title,
+  pageTitle,
+  description,
+  author
+}) {
+  const { views } = useRequestView(id)
+
   return (
     <Layout pageTitle={pageTitle} description={description}>
-      <div className=''>
+      <div>
         <article>
           <div className='pb-5'>
             <h1>{title}</h1>
-            <small>{author}</small>
+            <div className='flex justify-between'>
+              <small>{author}</small>
+              {!!views && (<small>{views} vistas</small>)}
+            </div>
           </div>
           <ReactMarkdown
             source={markdownBody}
@@ -24,6 +37,7 @@ export default function BlogPost ({ markdownBody, title, pageTitle, description,
 }
 
 BlogPost.propTypes = {
+  id: PropTypes.number.isRequired,
   markdownBody: PropTypes.string.isRequired,
   title: PropTypes.string,
   pageTitle: PropTypes.string,
