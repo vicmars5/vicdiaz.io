@@ -8,6 +8,8 @@ module.exports = {
       desktop: '760px'
     }
   },
-  variants: {},
+  variants: {
+    padding: ['responsive']
+  },
   plugins: []
 }

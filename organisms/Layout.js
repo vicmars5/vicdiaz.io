@@ -11,7 +11,10 @@ export default function Layout (props) {
         <title>{pageTitle}</title>
         <link rel='icon' href='/favicon.ico' />
         <meta name='description' description={description} />
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta
+          name="viewport" 
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
       </Head>
 
       <nav>
@@ -23,7 +26,7 @@ export default function Layout (props) {
           </Link>
         </div>
       </nav>
-      <main className='container mx-auto mt-5'>
+      <main className='container mx-auto mt-5 sm:px-2 px-6'>
         {children}
       </main>
     </div>

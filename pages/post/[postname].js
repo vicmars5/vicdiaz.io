@@ -4,6 +4,7 @@ import Layout from '../../organisms/Layout'
 import CodeBlock from '../../organisms/CodeBlock'
 import { getPost, getSlugs, getPath } from '../../utils/get-posts-slugs'
 import useRequestView from '../../utils/use-view-effect'
+import formatDate from '../../utils/format-date'
 
 export default function BlogPost ({
   id,
@@ -11,7 +12,8 @@ export default function BlogPost ({
   title,
   pageTitle,
   description,
-  author
+  author,
+  date
 }) {
   const { views } = useRequestView(id)
 
@@ -21,9 +23,11 @@ export default function BlogPost ({
         <article>
           <div className='pb-5'>
             <h1>{title}</h1>
-            <div className='flex justify-between'>
-              <small>{author}</small>
-              {!!views && (<small>{views} vistas</small>)}
+            <div className='flex'>
+              <small>
+                {!!views && `${views} vistas, `}
+                {formatDate(new Date(date))}
+              </small>
             </div>
           </div>
           <ReactMarkdown
@@ -42,7 +46,8 @@ BlogPost.propTypes = {
   title: PropTypes.string,
   pageTitle: PropTypes.string,
   author: PropTypes.string,
-  description: PropTypes.string
+  description: PropTypes.string,
+  date: PropTypes.string,
 }
 
 export async function getStaticProps ({ ...ctx }) {
