@@ -17,7 +17,7 @@ export default function BlogPost ({
 
   return (
     <Layout pageTitle={pageTitle} description={description}>
-      <div className=''>
+      <div>
         <article>
           <div className='pb-5'>
             <h1>{title}</h1>
