@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body {
+  @apply font-serif;
   @apply text-gray-900;
-  @apply p-3;
 	font-size: 20px;
   background-color: #fffffb;
 }
