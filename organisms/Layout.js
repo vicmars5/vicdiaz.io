@@ -20,8 +20,8 @@ export default function Layout (props) {
       <nav>
         <div className='container mx-auto text-center'>
           <Link href='/'>
-            <a className='text-2xl text-black font-extrabold p-3 hover:text-blue-500 inline-block'>
-              Vic's Blog
+            <a className='text-2xl font-sans text-blue-600 font-black p-3 hover:text-blue-400 inline-block'>
+              vicdiaz.io
             </a>
           </Link>
         </div>
