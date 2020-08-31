@@ -11,19 +11,22 @@ export default function Layout (props) {
         <title>{pageTitle}</title>
         <link rel='icon' href='/favicon.ico' />
         <meta name='description' description={description} />
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta
+          name="viewport" 
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
       </Head>
 
       <nav>
         <div className='container mx-auto text-center'>
           <Link href='/'>
-            <a className='text-2xl text-black font-extrabold p-3 hover:text-blue-500 inline-block'>
-              Vic's Blog
+            <a className='text-2xl font-sans text-blue-600 font-black p-3 hover:text-blue-400 inline-block'>
+              vicdiaz.io
             </a>
           </Link>
         </div>
       </nav>
-      <main className='container mx-auto mt-5'>
+      <main className='container mx-auto mt-5 sm:px-2 px-6'>
         {children}
       </main>
     </div>
