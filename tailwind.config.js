@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['pages/**/*.js'],
+  purge: false,
   theme: {
     extend: {},
     screens: {
