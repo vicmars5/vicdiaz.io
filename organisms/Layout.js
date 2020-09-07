@@ -12,8 +12,8 @@ export default function Layout (props) {
         <link rel='icon' href='/favicon.ico' />
         <meta name='description' description={description} />
         <meta
-          name="viewport" 
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          name='viewport'
+          content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
         />
       </Head>
 
@@ -34,7 +34,7 @@ export default function Layout (props) {
 }
 
 Layout.propTypes = {
-  pageTitle: PropTypes.string,
-  description: PropTypes.string,
-  children: PropTypes.node
+  pageTitle: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired
 }
