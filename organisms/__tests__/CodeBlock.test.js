@@ -1,11 +1,11 @@
 import CodeBlock from '../CodeBlock'
-import { shallow } from 'enzyme'
+import { mount } from 'enzyme'
 
 describe('CodeBlock', () => {
   it('should render', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <CodeBlock value='console.log()' language='js' />
     )
-    expect(wrapper.find('SyntaxHighlighter')).toHaveLength(1)
+    expect(wrapper.find('pre')).toHaveLength(1)
   })
 })
