@@ -6,5 +6,8 @@ describe('CodeBlock', () => {
     const wrapper = shallow(
       <CodeBlock value='console.log()' language='js' />
     )
+    expect(
+      wrapper.find('SyntaxHighlighter').length
+    ).toBe(1)
   })
 })
