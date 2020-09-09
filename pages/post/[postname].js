@@ -47,7 +47,7 @@ BlogPost.propTypes = {
   pageTitle: PropTypes.string,
   author: PropTypes.string,
   description: PropTypes.string,
-  date: PropTypes.string,
+  date: PropTypes.string
 }
 
 export async function getStaticProps ({ ...ctx }) {
