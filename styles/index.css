@@ -10,23 +10,24 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	@apply font-bold text-black;
+  @apply font-bold text-black;
+  @apply pb-2 pt-6;
 }
 
 h1 {
-  @apply text-3xl pb-0 pt-1;
+  @apply text-3xl;
 }
 
 h2 {
-  @apply text-2xl pb-0 pt-1;
+  @apply text-2xl;
 }
 
 h3 {
-  @apply text-xl pb-0 pt-1;
+  @apply text-xl;
 }
 
 p {
-  @apply pb-3;
+  @apply pb-4;
 }
 
 ul {
@@ -34,10 +35,19 @@ ul {
 }
 
 a {
-  @apply text-blue-700;
+  @apply text-blue-600;
 }
 
 pre {
   @apply bg-orange-100;
-  @apply my-3 p-3 bg-white rounded-lg shadow-lg;
+  @apply my-3 p-3 rounded-lg shadow-lg;
 }
+
+p > code {
+  @apply bg-orange-200 rounded px-1;
+}
+
+img {
+  @apply rounded-lg shadow-lg;
+}
+
