@@ -8,12 +8,13 @@ export default function Layout (props) {
   return (
     <div>
       <Head>
+        <html lang='es' />
         <title>{pageTitle}</title>
         <link rel='icon' href='/favicon.ico' />
         <meta name='description' description={description} />
         <meta
           name='viewport'
-          content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+          content='width=device-width, initial-scale=1.0, maximum-scale=5.0'
         />
       </Head>
 
