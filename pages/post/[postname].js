@@ -25,8 +25,12 @@ export default function BlogPost ({
             <h1>{title}</h1>
             <div className='flex'>
               <small>
-                {!!views && `${views} vistas, `}
-                {formatDate(new Date(date))}
+                {!!views && (
+                  <span id='t_views'>
+                    {views} vistas,
+                  </span>
+                )}
+                <span id='t_date'>{formatDate(new Date(date))}</span>
               </small>
             </div>
           </div>
