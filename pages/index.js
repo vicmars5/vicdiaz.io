@@ -10,7 +10,7 @@ export default function Home ({ pageTitle, description, posts, ...props }) {
       {posts.map((post) => (
         <article key={post.path}>
           <Link href={post.path} key={post.path}>
-            <a>
+            <a className='t_link-to-post'>
               <h2 className='inline-block leading-none w-full text-2xl'>
                 {post.title}
               </h2>
