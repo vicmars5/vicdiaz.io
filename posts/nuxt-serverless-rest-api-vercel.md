@@ -8,11 +8,11 @@ date: '2020-09-08'
 ---
 
 
-Hace poco estuve trabajando en un blog JAMstack usando NEXT, y una de las cosas que más me gustaron es el hecho de que es muy simple crear REST API _serverless_.
+Hace poco estuve trabajando en un blog NEXT, y una de las cosas que más me gustaron es el hecho de que es muy facil  crear REST API usando _serverless functions_.
 
 Después de eso me hice la pregunta de si sería posible hacer exactamente lo mismo usando NUXT, un framework muy parecido a NEXT, pero con la principal diferencia de que esta enfoca a usuarios de Vue.
 
-El resultado fue satisfactorio: logré crear un API _serverless_ sin muchos problemas y desplegarlo en Vercel.
+El resultado fue satisfactorio: logré crear un _REST API_ _serverless_ sin muchos problemas y desplegarlo en Vercel.
 
 Aqui esta lo que hice.
 
